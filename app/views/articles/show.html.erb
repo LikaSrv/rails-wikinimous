@@ -1,0 +1,11 @@
+<div class="article d-flex flex-column">
+  <div class="d-flex flex-row justify-content-center align-items-center">
+    <h1 class="title px-2"><%=@article.title%></h1>
+    <%= link_to edit_article_path(@article) do %>
+      <i class="fa-solid fa-pencil display-6 text-primary px-2"></i>
+    <%end%>
+    <i class="fa-solid fa-trash display-6 text-primary"></i>
+  </div>
+  <p class="d-flex flex-row justify-content-center align-items-center"><%=@article.content%></p>
+
+</div>

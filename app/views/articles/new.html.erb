@@ -1,0 +1,15 @@
+
+<div class="w-50 d-flex flex-column justify-content-center">
+  <h1>New Article</h1>
+  <%= form_with model:@article do |a|%>
+    <div class="d-flex flex-column">
+      <%= a.label :title, class: "h4"%>
+      <%= a.text_field :title, class: "h-25 border rounded-4"%>
+    </div>
+    <div class="d-flex flex-column">
+      <%= a.label :content, class: "h4"%>
+      <%= a.text_field :content, class: "h-50 border rounded-4"%>
+    </div>
+    <%= a.submit%>
+  <%end%>
+</div>

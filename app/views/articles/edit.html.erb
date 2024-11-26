@@ -1,0 +1,8 @@
+<h1>New Article</h1>
+
+<%= form_with model:@article do |a|%>
+  <% a.label :title%>
+  <% a.text :title%>
+  <% a.label :content%>
+  <% a.text :content%>%
+<%end%>

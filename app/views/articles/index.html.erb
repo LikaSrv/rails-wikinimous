@@ -1,0 +1,6 @@
+<div class="list">
+  <% @articles.each do |a|%>
+    <a class="title" href="<%=article_path(a)%>"><%=a.title%></a>
+    <p><%=a.content%>...</p>
+  <%end%>
+</div>
